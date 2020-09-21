@@ -140,6 +140,7 @@
         url: 'requete_fantoir.py?insee=' + $('#input_insee')[0].value,
       })
         .done(function (data) {
+          console.log('data', data)
           nom_commune = data[0][0];
           import_cadastre = data[0][1];
           rappr_cadastre = data[0][2];
@@ -172,7 +173,7 @@
             return 0;
           }
           commune_valide = true;
-          if (import_cadastre[0]) {
+          if (import_cadastre && import_cadastre[0]) {
             intitule = 'Cadastre récupéré le';
             date_import_cadastre = import_cadastre[0][2];
           } else {
@@ -389,7 +390,8 @@
 		<input
 				id='input_insee'
 				placeholder='Code INSEE'
-				type='text' ></input >
+				min='0'
+				type='number' ></input >
 		<input
 				type='submit'
 				value='Lister' >

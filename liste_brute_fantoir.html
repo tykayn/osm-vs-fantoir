@@ -31,6 +31,7 @@
           }
         }
       }
+      console.log('check_url_for_insee res', res)
       return res;
     }
 
@@ -50,6 +51,8 @@
         url: 'listing_fantoir.py?insee=' + $('#input_insee')[0].value,
       })
         .done(function (data) {
+          console.log('listing_fantoir data', data)
+
           nom_commune = data[0][0];
           $('#table_infos_commune').empty();
           $('#listing_fantoir').empty().append($('<thead>').append($('<tr>')));
@@ -94,7 +97,8 @@
 		<input
 				id='input_insee'
 				placeholder='Code INSEE'
-				type='text' ></input >
+				min='0'
+				type='number' ></input >
 		<input
 				type='submit'
 				value='Lister' >
