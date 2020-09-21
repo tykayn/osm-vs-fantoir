@@ -2,8 +2,12 @@
 <head>
 <meta charset="UTF-8">
 <title>FANTOIRs erronés</title>
-<script src="js/jquery-2.1.1.min.js"></script>
-<script src="js/jquery.tablesorter.min.js"></script>
+
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/jquery.tablesorter.min.js"></script>
+	<link rel="stylesheet" href="css/osm-fr.css" type="text/css"/>
+	<link rel="stylesheet" href="css/tablesorter.css" type="text/css"/>
+	<link rel="stylesheet" href="css/style.css" type="text/css"/>
 <style>
 	body{
 	    font-family: monospace;
@@ -247,7 +251,7 @@
 									.append($('<a>')
 									.attr('href',href)
 									.attr('target','blank')
-									.text(text)))	
+									.text(text)))
 	}
 	function add_josm_link(table,xl,xr,yb,yt){
 		$('#'+table+' tr:last').append($('<td>')
@@ -268,7 +272,7 @@
 			$('#'+table+' tr').append($('<th>').attr('colspan','3').append('Cartes'))
 			$('#'+table+' tr').append($('<th>').attr('colspan','3').append('Édition'))
 			$('#'+table+' tr').append($('<th>').attr('colspan','2').append('FANTOIR'))
-		} 
+		}
 	}
 
 </script>
