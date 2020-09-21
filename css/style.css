@@ -250,7 +250,7 @@ body {
 }
 
 table.tablesorter thead tr .header {
- /*width: 150 px;*/
+    /*width: 150 px;*/
     height: 60px;
 }
 
@@ -267,85 +267,102 @@ table.tablesorter tbody tr td.Vecteur {
     background: #ffbb00;
 }
 
-#bandeau{
-    top:0px;
-    width:100%;
-    height:210px;
-    z-index:3;
-    position:fixed;
-    background-color:white;
+#bandeau {
+    top: 0px;
+    width: 100%;
+    height: 210px;
+    z-index: 3;
+    position: fixed;
+    background-color: white;
 }
-#input_insee{
-    top:10px;
+
+#input_insee {
+    top: 10px;
 }
-#bandeau_commune{
+
+#bandeau_commune {
     border-bottom-style: outset;
 }
-.titre_commune{
-    margin-left:30px;
+
+.titre_commune {
+    margin-left: 30px;
 }
-.cellule_intitule{
+
+.cellule_intitule {
     text-align: right;
 }
-.cellule_data{
+
+.cellule_data {
     font-weight: bold;
 }
-#rubriques{
-    position:absolute;
-    top:130px;
+
+#rubriques {
+    position: absolute;
+    top: 130px;
 }
-#rubriques th{
-    background-color:black;
-    color:white;
+
+#rubriques th {
+    background-color: black;
+    color: white;
 }
-#reponse{
-    position:absolute;
-    top:210px;
-    z-index:2;
+
+#reponse {
+    position: absolute;
+    top: 210px;
+    z-index: 2;
 }
-.emphase{
-    color:red;
+
+.emphase {
+    color: red;
     font-size: x-large;
 }
-.rubrique{
-    cursor:pointer;
-    width:200px;
-    height:50px;
-    position:relative;
-    color:black;
+
+.rubrique {
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    position: relative;
+    color: black;
     font-weight: bold;
-    background:white;
-    margin-right:10px;
+    background: white;
+    margin-right: 10px;
 }
-.rubrique.active{
-    border:3px solid black;
+
+.rubrique.active {
+    border: 3px solid black;
 }
-.table_liste{
-    display:none;
+
+.table_liste {
+    display: none;
 }
-.zone_click{
-    cursor:pointer;
-    color:blue;
+
+.zone_click {
+    cursor: pointer;
+    color: blue;
     text-decoration: underline;
 }
-.zone_click.clicked{
-    background-color:green;
-    color:white;
+
+.zone_click.clicked {
+    background-color: green;
+    color: white;
 }
-#refresh_infos{
+
+#refresh_infos {
     position: fixed;
     width: 250px;
     height: 56px;
     top: 6px;
     right: 109px;
-    display:none;
+    display: none;
     z-index: 5;
     background-color: white;
 }
-#refresh_infos span{
+
+#refresh_infos span {
     font-weight: bold;
 }
-#bouton_communes_voisines{
+
+#bouton_communes_voisines {
     position: fixed;
     background-image: url("img/communes_voisines.png");
     background-size: 40px 40px;
@@ -354,32 +371,36 @@ table.tablesorter tbody tr td.Vecteur {
     height: 40px;
     top: 10px;
     right: 119px;
-    z-index:4;
+    z-index: 4;
 }
-#table_communes_voisines{
+
+#table_communes_voisines {
     position: fixed;
     border: solid 1px;
-//height: 100px;
+/ / height: 100 px;
     top: 10px;
     right: 119px;
-    background-color:white;
-    z-index:5;
-    visibility:hidden;
+    background-color: white;
+    z-index: 5;
+    visibility: hidden;
 }
-#table_communes_voisines table tr td.lien_commune{
-    color:blue;
+
+#table_communes_voisines table tr td.lien_commune {
+    color: blue;
     text-decoration: underline;
     cursor: pointer;
 }
-#table_communes_voisines table tr td.commune_centre{
-    color:black;
+
+#table_communes_voisines table tr td.commune_centre {
+    color: black;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
     cursor: default;
     background-color: lightblue;
 }
-#bouton_refresh{
+
+#bouton_refresh {
     position: fixed;
     background-image: url("img/72176-600.png");
     background-size: 49px 56px;
@@ -389,35 +410,39 @@ table.tablesorter tbody tr td.Vecteur {
     top: 6px;
     right: 60px;
 }
-#infos_refresh{
-    width:100%;
-    height:200px;
-    top:0px;
-    left:0px;
-    background-color:lightgrey;
-    opacity:0.8;
-    position:fixed;
-    display:none;
+
+#infos_refresh {
+    width: 100%;
+    height: 200px;
+    top: 0px;
+    left: 0px;
+    background-color: lightgrey;
+    opacity: 0.8;
+    position: fixed;
+    display: none;
     z-index: 15;
 }
-#wait_ajax{
-    position:fixed;
-    z-index:1;
-    width:100%;
-    height:100%;
-    background-color:lightgray;
-    opacity:0;
-    text-align:center;
+
+#wait_ajax {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: lightgray;
+    opacity: 0;
+    text-align: center;
 }
-#wait_ajax span{
-    background-color:black;
-    vertical-align:middle;
-    font-size:30px;
-    line-height:500px;
-    color:white;
-    border:50px solid black;
+
+#wait_ajax span {
+    background-color: black;
+    vertical-align: middle;
+    font-size: 30px;
+    line-height: 500px;
+    color: white;
+    border: 50px solid black;
 }
-#infobulle_aide{
+
+#infobulle_aide {
     position: fixed;
     color: red;
     background: #dddddd;
@@ -431,18 +456,20 @@ table.tablesorter tbody tr td.Vecteur {
     font-weight: bolder;
     font-size: 35px;
 }
-#aide{
-    position:fixed;
-    top:5px;
-    right:5px;
-    width:400px;
-    height:100%;
-    background-color:lavender;
-    overflow-y:scroll;
-    visibility:hidden;
+
+#aide {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    width: 400px;
+    height: 100%;
+    background-color: lavender;
+    overflow-y: scroll;
+    visibility: hidden;
     z-index: 10;
 }
-.fermer{
+
+.fermer {
     color: red;
     float: right;
     border: 1px black solid;
@@ -451,86 +478,99 @@ table.tablesorter tbody tr td.Vecteur {
     background: black;
     font-weight: bolder;
 }
-#aide h3{
+
+#aide h3 {
     text-align: center;
 }
-#aide li{
-    font-weight:bolder;
-    background-color:ivory;
+
+#aide li {
+    font-weight: bolder;
+    background-color: ivory;
 }
-#aide p{
+
+#aide p {
     margin-top: 0px;
     margin-bottom: 10px;
     margin-left: 3px;
 }
-#rub_adresses_non_match.active,#rub_voies_fantoir_non_match.active,#rub_places_non_match.active{
-    background:lightgrey;
+
+#rub_adresses_non_match.active, #rub_voies_fantoir_non_match.active, #rub_places_non_match.active {
+    background: lightgrey;
 }
-#rub_adresses_match.active,#rub_voies_match.active,#rub_places_match.active{
-    background:lightgreen;
+
+#rub_adresses_match.active, #rub_voies_match.active, #rub_places_match.active {
+    background: lightgreen;
 }
+
 #table_voies_match tr td,
 #table_adresses_match tr td,
 #table_adresses_non_match tr td,
 #table_voies_fantoir_non_match tr td,
 #table_places_non_match tr td,
-#table_places_match tr td{
-    background:lightgrey;
-    color:grey;
+#table_places_match tr td {
+    background: lightgrey;
+    color: grey;
     font-weight: bold;
 }
+
 /*	#table_places_non_match tr.statut0 td.ld_habite,
 	#table_places_match tr.statut0 td.ld_habite{
 		background-image: url("img/ld_habite.png");
 		background-size: 15px 12px;
 		background-repeat: no-repeat;
 	}
-*/	#table_voies_match tr.statut0 td,
-      #table_adresses_match tr.statut0 td,
-      #table_places_match tr.statut0 td,
-      #table_adresses_non_match tr.statut0 td,
-      #table_voies_fantoir_non_match tr.statut0 td,
-      #table_places_non_match tr.statut0 td{
-          background:white;
-          color:black;
-          font-weight: normal;
-      }
+*/
+#table_voies_match tr.statut0 td,
+#table_adresses_match tr.statut0 td,
+#table_places_match tr.statut0 td,
+#table_adresses_non_match tr.statut0 td,
+#table_voies_fantoir_non_match tr.statut0 td,
+#table_places_non_match tr.statut0 td {
+    background: white;
+    color: black;
+    font-weight: normal;
+}
+
 #table_voies_match tr.statut0 td.clicked,
 #table_adresses_match tr.statut0 td.clicked,
 #table_places_match tr.statut0 td.clicked,
 #table_adresses_non_match tr.statut0 td.clicked,
 #table_voies_fantoir_non_match tr.statut0 td.clicked,
-#table_places_non_match tr.statut0 td.clicked{
-    background-color:green;
-    color:white;
+#table_places_non_match tr.statut0 td.clicked {
+    background-color: green;
+    color: white;
     font-weight: normal;
 }
+
 #table_adresses_match tr.statut0 td.cell_fantoir,
 #table_voies_match tr.statut0 td.cell_fantoir,
-#table_places_match tr.statut0 td.cell_fantoir{
-    background:lightgreen;
-    color:black;
+#table_places_match tr.statut0 td.cell_fantoir {
+    background: lightgreen;
+    color: black;
     font-weight: normal;
 }
+
 #table_adresses_non_match tr.statut0 td.cell_fantoir,
 #table_voies_fantoir_non_match tr.statut0 td.cell_fantoir,
-#table_places_non_match tr.statut0 td.cell_fantoir{
-    background:lightgrey;
-    color:black;
+#table_places_non_match tr.statut0 td.cell_fantoir {
+    background: lightgrey;
+    color: black;
     font-weight: normal;
 }
-#pied_de_page{
-    position:relative;
-    width:100%;
-    height:30px;
-    z-index:3;
+
+#pied_de_page {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    z-index: 3;
 }
-#credits{
-    background:darkgrey;
-    position:fixed;
-    bottom:0px;
-    width:100%;
-    overflow:visible;
-    z-index:4;
+
+#credits {
+    background: darkgrey;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    overflow: visible;
+    z-index: 4;
     text-align: justify;
 }
